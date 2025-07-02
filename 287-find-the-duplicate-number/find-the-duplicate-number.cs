@@ -1,16 +1,17 @@
-public class Solution {
-    public int FindDuplicate(int[] nums) {
-        
-        int i = 1; 
-        var arr = new List<int>();
-        foreach(int num in nums)
-            if(arr.Contains(num))
+public class Solution
+{
+    public int FindDuplicate(int[] nums)
+    {
+        HashSet<int> seen = new HashSet<int>();
+
+        foreach (int num in nums)
+        {
+            if (seen.Contains(num))
                 return num;
-            else 
-                arr.Add(num);
-            
 
+            seen.Add(num);
+        }
 
-        return 0;
+        return -1;
     }
 }
