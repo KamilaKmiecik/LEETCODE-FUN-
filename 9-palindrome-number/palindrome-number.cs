@@ -16,8 +16,8 @@ public class Solution {
             i++;
         }
 
-        Console.WriteLine(i.ToString());
-        Console.WriteLine(arr.Length.ToString());
+       // Console.WriteLine(i.ToString());
+       // Console.WriteLine(arr.Length.ToString());
        // int l = arr.Lenght; 
         for (int k = 0; k < i; k++)
             if (arr[k] != arr[i - k -1])
