@@ -9,6 +9,7 @@ public class Solution {
                 if(nums[i] % nums[j] == 0){
                     IList<int> tmpList = new List<int>(dp[j]);
                     tmpList.Add(nums[i]);
+                    
                    // Console.WriteLine(string.Join(",", tmpList));
                    // Console.WriteLine(string.Join(",", dp[i]));
                    // Console.WriteLine(string.Join(",", dp[j]));
